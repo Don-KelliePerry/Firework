@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Fireworks - Thank You</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="fireworks"></canvas>
+    <div class="center-text">I love You</div>
+    <div class="bounce">Take YourSelf</div>
+    <audio
+      id="bg-audio"
+      src="pop.mp3"
+      autoplay
+      hidden
+      playbackRate="0.7"
+    ></audio>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var audio = document.getElementById("bg-audio");
+        audio.playbackRate = 0.6;
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

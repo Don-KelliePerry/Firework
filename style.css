@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+}
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3em;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 20px #ff0, 0 0 4px #f0f, 0 0 6px #0ff;
+    pointer-events: none;
+    z-index: 2;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0) translateX(-200px);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    3.7% {
+        transform: translateY(-20px) translateX(-190px);
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+    7.4% {
+        transform: translateY(40px) translateX(-180px);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    11.1% {
+        transform: translateY(-20px) translateX(-170px);
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+    14.8% {
+        transform: translateY(40px) translateX(-160px);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    18.5% {
+        transform: translateY(-20px) translateX(-150px);
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+    22.2% {
+        transform: translateY(40px) translateX(-140px);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    25.9% {
+        transform: translateY(-20px) translateX(-130px);
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+    29.6% {
+        transform: translateY(40px) translateX(-120px);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    33.3% {
+        transform: translateY(-20px) translateX(-110px);
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+    55.55% {
+        transform: translateY(40px) translateX(0px);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    61.11% {
+        transform: translateY(-20px) translateX(-20px);
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+    66.66% {
+        transform: translateY(40px) translateX(-40px);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    72.22% {
+        transform: translateY(-20px) translateX(-60px);
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+    77.77% {
+        transform: translateY(40px) translateX(-80px);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    83.33% {
+        transform: translateY(-20px) translateX(-100px);
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+    88.88% {
+        transform: translateY(40px) translateX(-120px);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    94.44% {
+        transform: translateY(-20px) translateX(-140px);
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+    100% {
+        transform: translateY(40px) translateX(-160px);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+}
+
+.bounce {
+    animation: bounce 6s infinite;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 90px;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 20px #ff0, 0 0 4px #f0f, 0 0 6px #0ff;
+    pointer-events: none;
+}
